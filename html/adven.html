@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/adven.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+      <a href="/html/1home.html"><h4>Back</h4></a>
+      <p>Adventure Games</p>
+    </div>
+   <div style="background-color: rgb(0, 242, 255);">
+   <div class="container">
+    <div class="slide bg-image image-1 active">
+      <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank" style="color: beige;"><h3>GTA 5</h3></a>
+    </div>
+    <div class="slide bg-image image-2">
+      <a href="https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/" target="_blank"><h3>Lies Of P</h3></a>
+    </div>
+    <div class="slide bg-image image-3">
+      <a href="https://store.steampowered.com/app/1172620/Sea_of_Thieves_2023_Edition/" target="_blank"><h3>Sea of Thieves</h3></a>
+    </div>
+    <div class="slide bg-image image-4">
+      <a href="https://store.steampowered.com/app/1332720/Thief_Simulator_2/" target="_blank"style="color: beige;"><h3>Thief Simulator 2</h3></a>
+    </div>
+    <div class="slide bg-image image-5">
+      <a href="https://store.steampowered.com/app/275850/No_Mans_Sky/" target="_blank"style="color: beige;"><h3>No Man's Sky</h3></a>
+    </div>
+  </div>
+</div>
+    <!-- Footer -->
+  <footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="row">
+    <ul>
+    <li><a href="/html/1home.html">Home</a></li>
+    <li><a href="/html/2about.html">About</a></li>
+    <li><a href="/html/3reviews.html">Reviews</a></li>
+    <li><a href="/html/4team.html">Team</a></li>
+    <li><a href="/html/5contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <div class="row">
+       GAMERS UNITED Copyright © 2023 GamersUnited - All rights reserved || Designed By:-- <a href="https://github.com/Swayam-Nanda" target="_blank"> Swayam_Nanda </a>
+    </div>
+    </div>
+    </footer>
+   <script>
+    const slides = document.querySelectorAll(".slide");
+
+slides.forEach((slide) => {
+  slide.addEventListener("click", () => {
+    removeCurrentActives();
+    slide.classList.add("active");
+  });
+});
+
+function removeCurrentActives() {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+}
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
+

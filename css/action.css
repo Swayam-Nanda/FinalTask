@@ -1,0 +1,141 @@
+.header{
+  background-color: #000;
+  width: 1013px;
+}
+.header h4{
+  text-decoration: solid;
+  color: wheat;
+  text-shadow: 0 0 15px #00ccff, 0 0 15px #0066ff;
+}
+.header p{
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 15px #59ff00, 0 0 15px #e1ff00;
+}
+.container {
+  display: flex;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(5, 5, 5);
+  color: #fff;
+}
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.image-1 {
+  background-image: url(/media/darksiders2.webp);
+}
+
+.image-2 {
+  background-image: url(/media/creed.webp);
+}
+
+.image-3 {
+  background-image: url(/media/dishonored.jpg);
+}
+
+.image-4 {
+  background-image: url(/media/watchdogs2.jpg);
+}
+
+.image-5 {
+  background-image: url(/media/cod.jpg);
+}
+
+.slide {
+  position: relative;
+  height: 80vh;
+  flex: 0.5;
+  border-radius: 50px;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 700ms ease-in;
+}
+
+.slide h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  font-size: 24px;
+}
+
+@media (max-width: 480px) {
+  .slide:nth-of-type(4),
+  .slide:nth-of-type(5) {
+    display: none;
+  }
+}
+
+/* JavaScript */
+.slide.active {
+  flex: 5;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+  /* Footer */
+  .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+  }
